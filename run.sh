@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Changeling Chronos Realtime runs in Changeling Chronos's environment: it needs Changeling Chronos and Changeling
-# CopyCat Realtime next to this folder (as in Changeling Studio). Missing ones are fetched here.
+# Simia Realtime next to this folder (as in Changeling Studio). Missing ones are fetched here.
 set -e
 cd "$(dirname "$0")"
 STUDIO="$(cd .. && pwd)"
-for a in Chronos CopyCat-Realtime; do
+for a in Chronos Simia-Realtime; do
     if [ ! -d "$STUDIO/Changeling-$a" ]; then
         echo "Getting Changeling $a ..."
         git clone "https://github.com/CursedPrograms/Changeling-$a" "$STUDIO/Changeling-$a"

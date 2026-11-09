@@ -13,13 +13,13 @@
 
 **Website:** https://cursedprograms.github.io/Changeling-Chronos-Realtime/
 
-Be younger or older, live on a video call. One snapshot of you, aged by Changeling Chronos, then worn live by Changeling CopyCat Realtime: your own expressions, younger or older, out to the call through OBS Virtual Camera.
+Be younger or older, live on a video call. One snapshot of you, aged by Changeling Chronos, then worn live by Changeling Simia Realtime: your own expressions, younger or older, out to the call through OBS Virtual Camera.
 
-![You, the new you, and CopyCat Realtime wearing it](assets/realtime_samples.jpg)
+![You, the new you, and Simia Realtime wearing it](assets/realtime_samples.jpg)
 
 *Part of the Changeling family, all together in [Changeling Studio](https://github.com/CursedPrograms/Changeling-Studio):
-[CopyCat](https://github.com/CursedPrograms/Changeling-CopyCat) ·
-[CopyCat Realtime](https://github.com/CursedPrograms/Changeling-CopyCat-Realtime) ·
+[Simia](https://github.com/CursedPrograms/Changeling-Simia) ·
+[Simia Realtime](https://github.com/CursedPrograms/Changeling-Simia-Realtime) ·
 [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias) (gender) ·
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos) (age) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio) (where in the world) ·
@@ -36,7 +36,7 @@ realtime: [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias-Realt
 [Changeling Chronos](https://github.com/CursedPrograms/Changeling-Chronos) edits a face with StyleGAN2: it finds the
 face's place in StyleGAN's space (e4e), learns the face for a minute so the result still looks like you (pivotal
 tuning), and moves it. That's far too slow for 30 frames a second. So it's done once, on one snapshot of you, and
-[Changeling CopyCat Realtime](https://github.com/CursedPrograms/Changeling-CopyCat-Realtime) wears the result live: a
+[Changeling Simia Realtime](https://github.com/CursedPrograms/Changeling-Simia-Realtime) wears the result live: a
 face swap that follows your expressions, head turns and talking, at camera speed. The new you looks steady, because
 it's the same face in every frame.
 
@@ -45,7 +45,7 @@ it's the same face in every frame.
 1. Python 3.9 - 3.12, an NVIDIA GPU (4 GB is enough), a webcam. For calls:
    [OBS](https://obsproject.com/) (its Virtual Camera) and, for the voice,
    [VB-Audio Virtual Cable](https://vb-audio.com/Cable/).
-2. Start `run.bat` (or `run.ps1`, `run.sh`). It needs Changeling Chronos and Changeling CopyCat Realtime next to
+2. Start `run.bat` (or `run.ps1`, `run.sh`). It needs Changeling Chronos and Changeling Simia Realtime next to
    this folder, as in [Changeling Studio](https://github.com/CursedPrograms/Changeling-Studio); any that are missing
    are cloned there, and Changeling Chronos is set up the first time (its environment and models). No environment of
    its own: it runs in Changeling Chronos's.
@@ -55,9 +55,9 @@ it's the same face in every frame.
    (only on this PC) and listed under **Made before**.
 5. **3 · Live:** **Persona's skin** (70 to start: the new you's skin tone and fine detail, like Chronos's
    wrinkles, which the face swap alone would leave as yours), the **voice** (off, female, male; **Echo** for Changeling Echo's trained voices) and **Go live**
-   (L): CopyCat Realtime opens wearing the new you. **Phone as the camera**: CopyCat Realtime shows a QR code
+   (L): Simia Realtime opens wearing the new you. **Phone as the camera**: Simia Realtime shows a QR code
    instead; open it on your phone and its camera and microphone are the input (the PC still does the work). In the call, pick **OBS Virtual Camera** as the camera (and
-   **CABLE Output** as the microphone). Close CopyCat Realtime to come back and make another.
+   **CABLE Output** as the microphone). Close Simia Realtime to come back and make another.
 
 ![The window](assets/window.png)
 
@@ -75,7 +75,7 @@ trying it out without one).
 
 ## Licenses
 
-MIT. Changeling Chronos is MIT (the StyleGAN2 FFHQ weights are NVIDIA's, non-commercial); Changeling CopyCat Realtime
+MIT. Changeling Chronos is MIT (the StyleGAN2 FFHQ weights are NVIDIA's, non-commercial); Changeling Simia Realtime
 uses InsightFace's inswapper (non-commercial research). So this is for personal and research use.
 
 <p align="center"><img src="assets/site-qr.png" alt="QR code to the Changeling-Chronos-Realtime website" width="200"></p>
